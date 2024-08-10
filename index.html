@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h1 class="title">Find GitHub Profiles</h1>
+        </div>
+
+        <div class="searchContainer">
+            <div class="search">
+                <input type="search" class="input" name="user-input" id="input" placeholder="Enter a Username">
+                <div class="error">
+                    <p class="noResult">There's no username with this</p>
+                </div>
+                <button class="btn" id="submit">Search</button>
+            </div>
+        </div>
+
+        <div class="profileContainer">
+
+            <div class="profileContent">
+                <img src="#" class="pic" alt="">
+                <div class="profileInfo">
+                    <h2 class="name"></h2>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="user"></a>
+                    <p class="date"></p>
+                </div>
+            </div>
+
+            <p class="bio"></p>
+
+            <div class="stats">
+
+                <div class="profileStat">
+                    <p class="title">Repos</p>
+                    <p class="value" id="repos"></p>
+                </div>
+
+                <div class="profileStat">
+                    <p class="title">Following</p>
+                    <p class="value" id="following"></p>
+                </div>
+
+                <div class="profileStat">
+                    <p class="title">Followers</p>
+                    <p class="value" id="followers"></p>
+                </div>
+            </div>
+
+            <div class="bottomContainer">
+
+                <div class="profileInfo">
+                    <div class="icons">
+                        <img src="./Images/location.svg" alt="" width="15px">
+                        <p id="location"></p>
+                    </div>
+                </div>
+
+                <div class="profileInfo">
+                    <div class="icons">
+                        <img src="./Images/company.svg" alt="" width="15px">
+                        <p id="company"></p>
+                    </div>
+                </div>
+
+                <div class="profileInfo">
+                    <div class="icons">
+                        <img src="./Images/website.svg" alt="">
+                        <a href="#" id="page"></a>
+                    </div>
+                </div>
+
+                <div class="profileInfo">
+                    <div class="icons">
+                        <img src="./Images/twitter.svg" alt="" width="15px">
+                        <a href="#" id="twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
